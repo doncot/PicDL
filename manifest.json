@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "PicDL",
+  "description": "絵DLを補助する拡張。",
+  "version": "0.1",
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+
+  "content_scripts" : [
+    {
+      "matches": ["http://www.pixiv.net/*"],
+      "js": ["main.js"]
+    }
+  ],
+
+  "permissions": [
+    "activeTab",
+    "contextMenus",
+    "clipboardWrite",
+    "http://www.pixiv.net/"
+  ]
+}
