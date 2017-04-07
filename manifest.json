@@ -9,7 +9,7 @@
 
   "content_scripts" : [
     {
-      "matches": ["http://www.pixiv.net/*"],
+      "matches": ["http://www.pixiv.net/member_illust.php*"],
       "js": ["main.js"]
     }
   ],
@@ -17,7 +17,6 @@
   "permissions": [
     "activeTab",
     "contextMenus",
-    "clipboardWrite",
-    "http://www.pixiv.net/"
+    "clipboardWrite"
   ]
 }
